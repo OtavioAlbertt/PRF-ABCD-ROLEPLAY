@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin - Planilha de Cursos da Semana</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+</head>
+<body>
+    <div id="particles-js"></div>
+    <header>
+        <div class="logo">
+            <img src="BrasãoPRF.png" alt="Brasão PRF" />
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="intro">
+            <h1>Cronograma de Cursos – PRF.</h1>
+            <div id="day-forms">
+                <div class="day-section" data-day="segunda">
+                    <h3>Segunda-feira</h3>
+                    <form class="day-form">
+                        <div class="form-group">
+                            <label for="time-segunda">Horário:</label>
+                            <input type="text" id="time-segunda" placeholder="Ex: 08:00Hr">
+                        </div>
+                        <div class="form-group">
+                            <label for="tolerance-segunda">Tolerância:</label>
+                            <input type="text" id="tolerance-segunda" placeholder="Ex: 15 minutos">
+                        </div>
+                        <div class="form-group">
+                            <label for="courses-segunda">Cursos:</label>
+                            <input type="text" id="courses-segunda" placeholder="Nome dos Cursos">
+                        </div>
+                        <div class="form-group">
+                            <label for="instructor-segunda">Instrutor:</label>
+                            <input type="text" id="instructor-segunda" placeholder="Nome do Instrutor">
+                        </div>
+                    </form>
+                </div>
+
+                <div class="day-section" data-day="terca">
+                    <h3>Terça-feira</h3>
+                    <form class="day-form">
+                        <div class="form-group">
+                            <label for="time-terca">Horário:</label>
+                            <input type="text" id="time-terca" placeholder="Ex: 08:00Hr">
+                        </div>
+                        <div class="form-group">
+                            <label for="tolerance-terca">Tolerância:</label>
+                            <input type="text" id="tolerance-terca" placeholder="Ex: 15 minutos">
+                        </div>
+                        <div class="form-group">
+                            <label for="courses-terca">Cursos:</label>
+                            <input type="text" id="courses-terca" placeholder="Nome dos Cursos">
+                        </div>
+                        <div class="form-group">
+                            <label for="instructor-terca">Instrutor:</label>
+                            <input type="text" id="instructor-terca" placeholder="Nome do Instrutor">
+                        </div>
+                    </form>
+                </div>
+
+                <div class="day-section" data-day="quarta">
+                    <h3>Quarta-feira</h3>
+                    <form class="day-form">
+                        <div class="form-group">
+                            <label for="time-quarta">Horário:</label>
+                            <input type="text" id="time-quarta" placeholder="Ex: 19:00Hr">
+                        </div>
+                        <div class="form-group">
+                            <label for="tolerance-quarta">Tolerância:</label>
+                            <input type="text" id="tolerance-quarta" placeholder="Ex: 15 minutos">
+                        </div>
+                        <div class="form-group">
+                            <label for="courses-quarta">Cursos:</label>
+                            <input type="text" id="courses-quarta" placeholder="Nome dos Cursos">
+                        </div>
+                        <div class="form-group">
+                            <label for="instructor-quarta">Instrutor:</label>
+                            <input type="text" id="instructor-quarta" placeholder="Nome do Instrutor">
+                        </div>
+                    </form>
+                </div>
+
+                <div class="day-section" data-day="quinta">
+                    <h3>Quinta-feira</h3>
+                    <form class="day-form">
+                        <div class="form-group">
+                            <label for="time-quinta">Horário:</label>
+                            <input type="text" id="time-quinta" placeholder="Ex: 08:00Hr">
+                        </div>
+                        <div class="form-group">
+                            <label for="tolerance-quinta">Tolerância:</label>
+                            <input type="text" id="tolerance-quinta" placeholder="Ex: 15 minutos">
+                        </div>
+                        <div class="form-group">
+                            <label for="courses-quinta">Cursos:</label>
+                            <input type="text" id="courses-quinta" placeholder="Nome dos Cursos">
+                        </div>
+                        <div class="form-group">
+                            <label for="instructor-quinta">Instrutor:</label>
+                            <input type="text" id="instructor-quinta" placeholder="Nome do Instrutor">
+                        </div>
+                    </form>
+                </div>
+
+                <div class="day-section" data-day="sexta">
+                    <h3>Sexta-feira</h3>
+                    <form class="day-form">
+                        <div class="form-group">
+                            <label for="time-sexta">Horário:</label>
+                            <input type="text" id="time-sexta" placeholder="Ex: 08:00Hr">
+                        </div>
+                        <div class="form-group">
+                            <label for="tolerance-sexta">Tolerância:</label>
+                            <input type="text" id="tolerance-sexta" placeholder="Ex: 15 minutos">
+                        </div>
+                        <div class="form-group">
+                            <label for="courses-sexta">Cursos:</label>
+                            <input type="text" id="courses-sexta" placeholder="Nome dos Cursos">
+                        </div>
+                        <div class="form-group">
+                            <label for="instructor-sexta">Instrutor:</label>
+                            <input type="text" id="instructor-sexta" placeholder="Nome do Instrutor">
+                        </div>
+                    </form>
+                </div>
+
+                <div class="day-section" data-day="sabado">
+                    <h3>Sábado</h3>
+                    <form class="day-form">
+                        <div class="form-group">
+                            <label for="time-sabado">Horário:</label>
+                            <input type="text" id="time-sabado" placeholder="Ex: 08:00Hr">
+                        </div>
+                        <div class="form-group">
+                            <label for="tolerance-sabado">Tolerância:</label>
+                            <input type="text" id="tolerance-sabado" placeholder="Ex: 15 minutos">
+                        </div>
+                        <div class="form-group">
+                            <label for="courses-sabado">Cursos:</label>
+                            <input type="text" id="courses-sabado" placeholder="Nome dos Cursos">
+                        </div>
+                        <div class="form-group">
+                            <label for="instructor-sabado">Instrutor:</label>
+                            <input type="text" id="instructor-sabado" placeholder="Nome do Instrutor">
+                        </div>
+                    </form>
+                </div>
+
+                <div class="day-section" data-day="domingo">
+                    <h3>Domingo</h3>
+                    <form class="day-form">
+                        <div class="form-group">
+                            <label for="time-domingo">Horário:</label>
+                            <input type="text" id="time-domingo" placeholder="Ex: 08:00Hr">
+                        </div>
+                        <div class="form-group">
+                            <label for="tolerance-domingo">Tolerância:</label>
+                            <input type="text" id="tolerance-domingo" placeholder="Ex: 15 minutos">
+                        </div>
+                        <div class="form-group">
+                            <label for="courses-domingo">Cursos:</label>
+                            <input type="text" id="courses-domingo" placeholder="Nome dos Cursos">
+                        </div>
+                        <div class="form-group">
+                            <label for="instructor-domingo">Instrutor:</label>
+                            <input type="text" id="instructor-domingo" placeholder="Nome do Instrutor">
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <button id="save-all-btn" class="btn">Salvar Todos os Dias</button>
+            <button id="copy-btn">Copiar para Discord</button>
+
+            <div id="discord-preview" class="discord-preview">
+                <h3>📋 Prévia do Discord:</h3>
+                <div id="discord-message" class="discord-message"></div>
+            </div>
+
+            <table id="courses-table">
+                <thead>
+                    <tr>
+                        <th>Dia</th>
+                        <th>Cursos</th>
+                        <th>Instrutor</th>
+                        <th>Horário</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Cursos serão adicionados dinamicamente -->
+                </tbody>
+            </table>
+
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

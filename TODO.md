@@ -1,0 +1,4 @@
+- [ ] Fix ID mismatches in script.js to match admin.html form (day, time, tolerance, courses, instructor)
+- [ ] Update course object to include tolerance
+- [ ] Update renderCourses function to display in #schedule-display with proper formatting
+- [ ] Update copy button ID to 'copy-btn' and modify logic to generate the specified message format
