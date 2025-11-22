@@ -1,4 +1,4 @@
-    /* Reset básico */
+   /* Reset básico */
 * {
     margin: 0;
     padding: 0;
@@ -691,4 +691,85 @@ main {
     .message-preview h3 {
         font-size: 1.2em;
     }
+    .hierarchy-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.hierarchy-card {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 215, 0, 0.3);
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.1);
+    transition: all 0.4s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.hierarchy-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 215, 0, 0.1), transparent);
+    transition: left 0.5s;
+}
+
+.hierarchy-card:hover::before {
+    left: 100%;
+}
+
+.hierarchy-card:hover {
+    transform: translateY(-5px) scale(1.02);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.5), inset 0 1px 0 rgba(255, 255, 255, 0.2);
+}
+
+.card-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.card-header i {
+    font-size: 1.5em;
+    color: #FFD700;
+    margin-right: 10px;
+}
+
+.card-header h3 {
+    color: #FFD700;
+    margin: 0;
+    font-size: 1.2em;
+}
+
+.hierarchy-card ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.hierarchy-card li {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 8px 10px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 0.9em;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .hierarchy-grid {
+        grid-template-columns: 1fr;
+    }
+    .hierarchy-card {
+        padding: 15px;
+    }
+}
 }
