@@ -208,6 +208,119 @@ if (copyBtn) {
     });
 }
 
+// Subdivision modal functionality
+const subdivisionModal = document.getElementById('subdivision-modal');
+if (subdivisionModal) {
+    const modalTitle = document.getElementById('modal-title');
+    const modalImage = document.getElementById('modal-image');
+    const modalDescription = document.getElementById('modal-description');
+    const modalRequirements = document.getElementById('modal-requirements');
+    const closeBtn = subdivisionModal.querySelector('.close');
+
+    // Handle card clicks
+    document.addEventListener('click', (e) => {
+        if (e.target.closest('.card')) {
+            const card = e.target.closest('.card');
+            const title = card.getAttribute('data-title');
+            const description = card.getAttribute('data-description');
+            const requirements = card.getAttribute('data-requirements');
+            const image = card.getAttribute('data-image');
+
+            modalTitle.textContent = title;
+            modalDescription.textContent = description;
+            modalRequirements.innerHTML = requirements;
+
+            if (image) {
+                modalImage.src = image;
+                modalImage.alt = title;
+                modalImage.style.display = 'block';
+            } else {
+                modalImage.style.display = 'none';
+            }
+
+            subdivisionModal.style.display = 'flex';
+        }
+    });
+
+    // Handle req-btn click to open requirements modal
+    document.addEventListener('click', (e) => {
+        if (e.target.classList.contains('gtm-btn')) {
+            const gtmRequirementsModal = document.getElementById('gtm-requirements-modal');
+            gtmRequirementsModal.style.display = 'flex';
+            // Close subdivision modal
+            subdivisionModal.style.display = 'none';
+        }
+        if (e.target.classList.contains('noe-btn')) {
+            const noeRequirementsModal = document.getElementById('noe-requirements-modal');
+            noeRequirementsModal.style.display = 'flex';
+            // Close subdivision modal
+            subdivisionModal.style.display = 'none';
+        }
+    });
+
+    // Close modal
+    closeBtn.addEventListener('click', () => {
+        subdivisionModal.style.display = 'none';
+    });
+
+    window.addEventListener('click', (e) => {
+        if (e.target === subdivisionModal) {
+            subdivisionModal.style.display = 'none';
+        }
+    });
+}
+
+// Requirements modal functionality
+const requirementsModal = document.getElementById('requirements-modal');
+if (requirementsModal) {
+    const closeBtn = requirementsModal.querySelector('.close');
+
+    // Close modal
+    closeBtn.addEventListener('click', () => {
+        requirementsModal.style.display = 'none';
+    });
+
+    window.addEventListener('click', (e) => {
+        if (e.target === requirementsModal) {
+            requirementsModal.style.display = 'none';
+        }
+    });
+}
+
+// GTM Requirements modal functionality
+const gtmRequirementsModal = document.getElementById('gtm-requirements-modal');
+if (gtmRequirementsModal) {
+    const closeBtn = gtmRequirementsModal.querySelector('.close');
+
+    // Close modal
+    closeBtn.addEventListener('click', () => {
+        gtmRequirementsModal.style.display = 'none';
+    });
+
+    window.addEventListener('click', (e) => {
+        if (e.target === gtmRequirementsModal) {
+            gtmRequirementsModal.style.display = 'none';
+        }
+    });
+}
+
+// NOE Requirements modal functionality
+const noeRequirementsModal = document.getElementById('noe-requirements-modal');
+if (noeRequirementsModal) {
+    const closeBtn = noeRequirementsModal.querySelector('.close');
+
+    // Close modal
+    closeBtn.addEventListener('click', () => {
+        noeRequirementsModal.style.display = 'none';
+    });
+
+    window.addEventListener('click', (e) => {
+        if (e.target === noeRequirementsModal) {
+            noeRequirementsModal.style.display = 'none';
+        }
+    });
+}
+
 // Particles.js initialization
 particlesJS('particles-js', {
     "particles": {
