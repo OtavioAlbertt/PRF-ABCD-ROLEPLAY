@@ -30,35 +30,98 @@
         <section class="content">
             <h1>Subdivisões da PRF</h1>
             <div class="subdivisions">
-                <div class="card">
+                <div class="card" data-title="DOA – Departamento de Operações Aéreas" data-description="O DOA é a unidade aérea da PRF, responsável por helicópteros e aviões usados em operações. Atua no patrulhamento, perseguições, salvamentos e apoio às unidades táticas. Garante resposta rápida e visão estratégica em ações por todo o país." data-requirements="Em breve" data-image="Brasao DOA.png">
                     <h3>DOA – Departamento de Operações Aéreas</h3>
                     <p>O DOA é a unidade aérea da PRF, responsável por helicópteros e aviões usados em operações.
 Atua no patrulhamento, perseguições, salvamentos e apoio às unidades táticas.
 Garante resposta rápida e visão estratégica em ações por todo o país.</p>
                 </div>
-                <div class="card">
-                    <h3>Batedores</h3>
+                <div class="card" data-title="GTM - Grupo tatico de motociclistas" data-description="Os Batedores da PRF são policiais especializados em escoltas e segurança viária avançada. Fazem escolta de autoridades, comboios e cargas sensíveis, garantindo trajeto seguro. Também controlam trânsito em operações, eventos e situações emergenciais." data-requirements="<button class='req-btn gtm-btn'>Ver Requisitos</button>" data-image="Brasao MOTOPOL.png">
+                    <h3>GTM - Grupo tatico de motociclistas</h3>
                     <p>Os Batedores da PRF são policiais especializados em escoltas e segurança viária avançada.
 Fazem escolta de autoridades, comboios e cargas sensíveis, garantindo trajeto seguro.
 Também controlam trânsito em operações, eventos e situações emergenciais.</p>
                 </div>
-                <div class="card">
+                <div class="card" data-title="GRR – Grupo de Respostas Rápidas" data-description="O GRR (Grupo de Resposta Rápida) é a tropa de elite de pronta intervenção da PRF. Age rapidamente em situações críticas, como perseguições, assaltos e confrontos armados. Apoia operações de alto risco com alto poder tático e mobilidade imediata." data-requirements="Desativada pela Prefeitura" data-image="Brasao GRR.png">
                     <h3>GRR – Grupo de Respostas Rápidas</h3>
                     <p>
 O GRR (Grupo de Resposta Rápida) é a tropa de elite de pronta intervenção da PRF.
 Age rapidamente em situações críticas, como perseguições, assaltos e confrontos armados.
 Apoia operações de alto risco com alto poder tático e mobilidade imediata.</p>
                 </div>
-                <div class="card">
-                    <h3>Núcleos Regionais</h3>
-                    <p>Os Núcleos Regionais são unidades da PRF que organizam e coordenam as operações dentro de cada região ou estado.
-Eles gerenciam efetivo, viaturas e ações locais, garantindo que tudo funcione conforme as diretrizes nacionais.
-Também apoiam operações especiais e integram informações regionais para tomada de decisão.</p>
+                <div class="card" data-title="Núcleos Regionais" data-description="Os Núcleos Regionais são unidades da PRF que organizam e coordenam as operações dentro de cada região ou estado. Eles gerenciam efetivo, viaturas e ações locais, garantindo que tudo funcione conforme as diretrizes nacionais. Também apoiam operações especiais e integram informações regionais para tomada de decisão." data-requirements="<button class='req-btn noe-btn'>Ver Requisitos</button>" data-image="Brasao NOE.png">
+                    <h3>NOE - Núcleo de Operações Especiais</h3>
+                    <p>O NOE (Núcleo de Operações Especiais) é a unidade tática da PRF para ações de alto risco.
+Ele atua no combate ao crime organizado e em operações complexas nas rodovias federais.
+Seu efetivo recebe treinamento especializado em técnicas de incursão, tiro e operações especiais.</p>
+                </div>
+                <div class="card" data-title="GPT – Grupo de Patrulhamento Tático" data-description="O GPT (Grupo de Patrulhamento Tático) é a unidade especializada da PRF em patrulhamento avançado e tático. Atua em operações de controle viário estratégico, apoio a ações especiais e manutenção da segurança nas rodovias. Garante intervenção rápida e eficaz em situações de risco." data-requirements="Em breve" data-image="Brasao GPT.png">
+                    <h3>GPT – Grupo de Patrulhamento Tático</h3>
+                    <p>O GPT (Grupo de Patrulhamento Tático) é a unidade especializada da PRF em patrulhamento avançado e tático.
+Atua em operações de controle viário estratégico, apoio a ações especiais e manutenção da segurança nas rodovias.
+Garante intervenção rápida e eficaz em situações de risco.</p>
+            </div>
+            <!-- Modal for subdivision details -->
+            <div id="subdivision-modal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h2 id="modal-title"></h2>
+                    <img id="modal-image" src="" alt="" style="max-width: 100%; height: auto; margin: 10px 0;">
+                    <p id="modal-description"></p>
+                    <h3>Requisitos</h3>
+                    <p id="modal-requirements"></p>
+                </div>
+            </div>
+
+            <!-- Modal for GTM requirements -->
+            <div id="gtm-requirements-modal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h2>Requisitos Para Ser GTM</h2>
+                    <ul>
+                        <li>Ser Agente Especial ou superior</li>
+                        <li>Ter excelente conduta e nenhuma advertência</li>
+                        <li>Idade mínima: 16 anos</li>
+                        <li>Possuir aptidão física e estabilidade emocional</li>
+                        <li>Ter mínimo de 7 dias de atuação na PRF</li>
+                        <li>Habilitação A (obrigatória)</li>
+                        <li>Ter nenhuma advertência</li>
+                        <li>Ter uma boa avaliação dos comandos</li>
+                    </ul>
+                    <h3>Necessário os cursos abaixo:</h3>
+                    <ul>
+                        <li>SAT A</li>
+                        <li>Modulação</li>
+                        <li>QTH</li>
+                    </ul>
+                    <h4>Após seguir os padrões dos requisitos entrar em contato com os comandos dos Batedores:</h4>
+                    <button onclick="navigator.clipboard.writeText('<@568193633308901397>')" class="contact-btn">@Marcelo</button>
+                </div>
+            </div>
+            <!-- Modal for NOE requirements -->
+            <div id="noe-requirements-modal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h2>Requisitos Para NOE (Núcleo De Operações Especiais)</h2>
+                    <ul>
+                        <li>Sem advertência diciplinar</li>
+                        <li>Aptidão Física Excepcional</li>
+                        <li>Excelente Histórico Profissional</li>
+                        <li>Estabilidade Emocional</li>
+                        <li>Habilitação em Armamento Avançado</li>
+                        <li>Ao menos 1 mês na PRF</li>
+                        <li>Ser ao menos Agente Especial.</li>
+                        <li>Estar disposto a lidar com União</li>
+                        <li>Essencial a conduta e postura exemplar de militar</li>
+                        <li>Indicação de alguma outra divisão</li>
+                    </ul>
+                    <h4>Após seguir os padrões dos requisitos entrar em contato com os comandos NOE:</h4>
+                    <button onclick="navigator.clipboard.writeText('@kauangaspar')" class="contact-btn">@kauangaspar</button>
+                    <h4>⚠️ Atualmente 12 Vagas Livres! ⚠️</h4>
                 </div>
             </div>
         </section>
     </main>
     <script src="script.js"></script>
 </body>
-
 </html>
